@@ -50,8 +50,17 @@
   background-color: deepskyblue;
 }
 
-.aside {
-  grid-area: aside;
+.aside1 {
+  grid-area: aside1;
+  background-color: deeppink;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.aside2 {
+  grid-area: aside2;
   background-color: deeppink;
 
   @media (max-width: 1200px) {
