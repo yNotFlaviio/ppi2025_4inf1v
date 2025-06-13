@@ -1,0 +1,133 @@
+:root {
+  --blue: #0cc4e6;
+  --white: #ffffff;
+  --black: #111;
+}
+
+.wrapper {
+  background-color: var(--blue);
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: var(--white);
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoBox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 0.5rem;
+}
+
+.titleBox {
+  text-align: right;
+  flex: 1;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--blue);
+  font-family: 'Lastica Regular', sans-serif;
+  font-weight: regular;
+  margin: ;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--black);
+  letter-spacing: 1px;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+}
+
+.line {
+  width: 100%;
+  border: 0.5px solid #333;
+  margin-top: 1rem;
+}
+
+.main {
+  background-color: var(--white);
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  flex: 1;
+  margin-top: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center; /* centraliza os cards no eixo horizontal */
+  gap: 1.5rem;
+  flex-wrap: wrap; /* permite quebra de linha */
+  padding: 1rem 0;
+}
+
+.cardImage {
+  width: 100%;
+  height: 250px;
+  border-radius: 1rem;
+  object-fit: cover; /* ajusta a imagem para cobrir o espaço sem distorcer */
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 280px; /* largura fixa para facilitar alinhamento */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--white);
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .logoBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titleBox {
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
